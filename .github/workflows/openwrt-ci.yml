@@ -132,7 +132,7 @@ jobs:
            CONFIG_VERSION_SUPPORT_URL=""
            EOF
            sed -i 's/^[ \t]*//g' ./.config
-           run: make defconfig
+           make defconfig
 
       - name: Download packages
         run: make download -j16
